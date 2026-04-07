@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  crier-service:
+    image: dnd-crier
+    volumes:
+      - .:/data
+    command: ["bash", "-c", "crier.sh >> /data/chronicles.txt"]
